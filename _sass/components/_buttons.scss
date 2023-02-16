@@ -18,16 +18,15 @@
 }
 
 .btn-primary {
-  background-color: $brand-red;
-  background: linear-gradient(0deg, $brand-red 0%, $brand-red 50%, $brand-red 100%);
+  background-color: $brand-blue;
+  background: linear-gradient(0deg, $brand-blue 0%, $brand-blue 50%, $brand-blue 100%);
   border-color: $primary;
   &:active,
   &:focus,
   &:hover {
-    // background-color: $brand-red !important;
+    // background-color: $brand-blue !important;
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, darken($brand-red,12%) 0%, $brand-red 30%, $brand-red 70%, darken($brand-red,12%) 100%);
-    border-color: $brand-dark-red !important;
+    background: linear-gradient(0deg, darken($brand-blue,12%) 0%, $brand-blue 30%, $brand-blue 70%, darken($brand-blue,12%) 100%);
     color: white;
   }
   &:active,
