@@ -1,5 +1,9 @@
 body { overflow-x: hidden; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
+body.light-mode { background-color: #fafafa; color: #222; }
+
+body.dark-mode { background-color: #17212b; color: #eee; }
+
 p { line-height: 1.75; }
 
 a { color: #07e; }
@@ -266,13 +270,11 @@ ul.social-buttons li a { font-size: 20px; line-height: 50px; display: block; wid
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover { background-color: #07e; }
 
-#page-top.landing { color: #ededed; }
-
 #page-top.landing footer { display: none; }
 
 #page-top.landing .section-subheading { color: #07e; }
 
-#landing { background: #111; position: relative; min-height: 100vh; padding: 5vh 0; }
+#landing { position: relative; min-height: 100vh; padding: 5vh 0; }
 
 #landing h1 { font-family: Helvetica Neue, Helvetica, Arial, sans-serif; font-size: 6rem; font-weight: 100; letter-spacing: 2px; text-align: center; color: #f35626; margin-bottom: .2em; }
 
@@ -282,7 +284,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 #landing h1.hue-shift { background-image: -webkit-linear-gradient(358deg, #f35626, #feab3a); background-image: linear-gradient(92deg, #f35626, #feab3a); -webkit-background-clip: text; text-fill-color: transparent; -webkit-background-clip: text; text-fill-color: transparent; line-height: 1.25; }
 
-#landing h4 { margin: 0; color: #bbb; }
+#landing h4 { margin: 0; opacity: .7; font-weight: 600; }
 
 .icon svg { display: inline-block; width: 28px; height: auto; }
 

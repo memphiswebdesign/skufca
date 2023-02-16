@@ -2,6 +2,15 @@
 body {
   overflow-x: hidden;
   @include body-font;
+
+  &.light-mode {
+    background-color: #fafafa;
+    color: #222;
+  }
+  &.dark-mode {
+    background-color: #17212b;
+    color: #eee;
+  }
 }
 
 p {

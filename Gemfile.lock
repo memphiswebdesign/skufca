@@ -97,6 +97,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.0)
+  jekyll
   jekyll-agency!
   jekyll-contentful-data-import
   rake (~> 13.0)

@@ -37,11 +37,3 @@ markdown: kramdown
 # Uncomment following line to use Formspree form ID based URL instead of email based URL
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
 # formspree_form_path: "f/a_form_id"
-
-# Contentful - See: https://github.com/contentful/jekyll-contentful-data-import#configuration
-contentful:
-  spaces:
-    - advance_fleet:
-        space: 0v90t12bjc8u
-        access_token: LxxJAJ4En5WqEGZpvcy10-30B7xy71vksDpbgdGVm3k
-        environment: master
