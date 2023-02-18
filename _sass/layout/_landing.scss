@@ -48,18 +48,23 @@
 #dots {
   position: absolute;
   top: 0;
-  right: 2%;
-  overflow: hidden;
+  right: 1.5%;
+  
+  @media (max-width: 450px) {
+    top: 15px;
+    right: 15px;
+  }
 
   img, canvas {
-    filter: contrast(0.82);
+    filter: contrast(0.7);
     width: 50vw;
     max-width: 540px;
-    opacity: .27;
+    opacity: .4;
     transform: translate(0%, 3.5%);
 
     @media (max-width: 450px) {
       width: 65vw;
+      transform: translate(0%, -3.5%);
     }
   }
 }

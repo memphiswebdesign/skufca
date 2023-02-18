@@ -2,15 +2,17 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  background-color: #072B31;
+  color: #FAFAFA;
 
-  &.light-mode {
-    background-color: #FAFAFA;
-    color: #171717;
-  }
-  &.dark-mode {
-    background-color: #171717;
-    color: #FAFAFA;
-  }
+  // &.light-mode {
+  //   background-color: #FAFAFA;
+  //   color: #171717;
+  // }
+  // &.dark-mode {
+  //   background-color: #072B31;
+  //   color: #FAFAFA;
+  // }
 }
 
 p {
