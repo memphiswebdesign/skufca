@@ -70,8 +70,8 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
-  @media (max-width: 768px) {font-size: 1.38rem;}
-  @media (max-width: 420px) {font-size: 1.2rem;}
+  @media (max-width: 768px) {font-size: 1.4rem;}
+  @media (max-width: 420px) {font-size: 1.3rem;}
 }
 
 // Font Size Mixin
@@ -131,6 +131,11 @@ hr.tex-1 {
 
 .page-section {
   padding: 100px 0;
+
+  @media (max-width: 768px) {padding: 80px 0;}
+  @media (max-width: 450px) {padding: 50px 0;}
+
+
   h2.section-heading {
     // font-size: 40px;
     margin-top: 0;
@@ -194,6 +199,12 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+img.invert {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="1 0" /><feFuncG type="table" tableValues="1 0" /><feFuncB type="table" tableValues="1 0" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 

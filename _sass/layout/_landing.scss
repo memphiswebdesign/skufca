@@ -45,6 +45,31 @@
   }
 }
 
+#proof {
+  .col-4 {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    opacity: .4;
+    transform-origin: center;
+    width: 80%;
+
+    @media (min-width: 780px) {
+      max-width: 115px;
+      width: 100%;
+    }
+
+    &.sm {transform: scale(.78);}
+    &.md {transform: scale(.9);}
+    &.lg {transform: scale(1.22);}
+  }
+}
+
 #post {}
 .post-item {
   display: flex;
@@ -66,11 +91,17 @@
     margin: 1em 0 2em 0;
   }
   h5 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     margin: 0 0 5em 0;
  
-    @media (max-width: 780px) {font-size: 1.48rem;}
-    @media (max-width: 450px) {font-size: 1.3rem;}
+    @media (max-width: 780px) {
+      font-size: 1.5rem;
+      margin: 0 0 4em 0;
+    }
+    @media (max-width: 450px) {
+      font-size: 1.25rem;
+      margin: 0 0 3em 0;
+    }
   }
   h6 {
     margin-top: auto;
@@ -95,8 +126,6 @@
 
     h5 {color: $primary;}
     &:after {transform: translateX(30%);}
-
-
   }
 }
 
@@ -121,37 +150,29 @@
 
 #dots {
   position: absolute;
-  top: 0;
-  right: 1.5%;
-  
-  @media (max-width: 450px) {
-    top: 15px;
-    right: 15px;
+  top: 70px;
+  right: 7%;
+
+  @media (max-width: 990px) {
+    top: 20px;
+    right: 20px;
   }
 
   img, canvas {
     filter: contrast(0.7);
     width: 50vw;
     max-width: 540px;
-    opacity: .4;
-    transform: translate(0%, 3.5%);
+    opacity: .33;
 
     @media (max-width: 450px) {
-      width: 65vw;
-      transform: translate(0%, -3.5%);
+      width: 55vw;
     }
   }
 }
 
 .hue-shift {
-  // background-image: -webkit-linear-gradient(358deg, #f35626, #feab3a);
-  // background-image: linear-gradient(92deg, #f35626, #feab3a);
-  // -webkit-background-clip: text;
-  // text-fill-color: transparent;
-  // -webkit-background-clip: text;
-  // text-fill-color: transparent;
   background-size: 200%;
-  background-image: linear-gradient(105deg, #D16BA5, #86A8E7, #5FFBF1, #86A8E7, #D16BA5);
+  background-image: linear-gradient(105deg, #ffc515, #8feb3e, #31e3d7, #8feb3e, #ffc515);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
