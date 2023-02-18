@@ -10,6 +10,8 @@ a:hover { color: #e1a900; }
 
 h1, h2, h3, h4, h5, h6 { letter-spacing: .025em; margin-bottom: 1em; line-height: 1.3em; }
 
+h1.marker:before, h2.marker:before, h3.marker:before, h4.marker:before, h5.marker:before, h6.marker:before { content: ''; display: block; height: 4px; width: 85px; background: #ffc515; margin-bottom: 1em; }
+
 h1 { font-size: 2.4rem; }
 
 @media (max-width: 768px) { h1 { font-size: 1.85rem; } }
@@ -289,6 +291,38 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #landing h2 { color: #A3A3A3; }
 
 .icon svg { display: inline-block; width: 28px; height: auto; }
+
+.post-item { display: flex; flex-direction: column; position: relative; background-color: rgba(255, 255, 255, 0.06); padding: 1em; height: 100%; cursor: pointer; }
+
+.post-item .tag, .post-item .date { display: block; }
+
+.post-item .tag { text-transform: uppercase; color: #ffc515; font-size: 11.5px; letter-spacing: .15em; font-weight: 300; margin: 1em 0 2em 0; }
+
+.post-item h5 { font-size: 2rem; margin: 0 0 5em 0; }
+
+@media (max-width: 780px) { .post-item h5 { font-size: 1.48rem; } }
+
+@media (max-width: 450px) { .post-item h5 { font-size: 1.3rem; } }
+
+.post-item h6 { margin-top: auto; margin-bottom: 0; }
+
+.post-item:after { content: ''; display: inline-block; position: absolute; bottom: 1.5em; right: 1.5em; width: 11.3px; height: 20px; background-image: url("data:image/svg+xml,%3Csvg width='13' height='23' viewBox='0 0 13 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.90605 2.98747C1.54273 2.98747 1.17879 2.84899 0.9015 2.57141C0.346191 2.01654 0.3413 1.11183 0.896447 0.556806C1.45131 0.00194156 2.34608 -0.0029494 2.90062 0.551753L2.91057 0.561701C3.46588 1.11669 3.46588 2.01655 2.91057 2.57141C2.63346 2.84868 2.2694 2.98747 1.90605 2.98747Z' fill='%23FFC515'/%3E%3Cpath d='M8.29383 9.37549C7.93098 9.37549 7.56939 9.23813 7.29166 8.96243L7.27034 8.94111C6.71374 8.38782 6.71075 7.48833 7.26419 6.9314C7.81634 6.3748 8.71669 6.37181 9.27357 6.92509L9.29552 6.94609C9.85196 7.49937 9.85463 8.39887 9.30168 8.9558C9.02457 9.23527 8.65875 9.37549 8.29383 9.37549ZM5.09961 6.18128C4.7366 6.18128 4.37251 6.0428 4.09506 5.76522L4.07374 5.74422C3.51888 5.18923 3.51888 4.28937 4.07374 3.73451C4.62861 3.17964 5.52875 3.17964 6.08313 3.73451L6.1046 3.75551C6.65959 4.31049 6.65959 5.21003 6.1046 5.76522C5.82765 6.04248 5.4634 6.18128 5.09961 6.18128Z' fill='%23FFC515'/%3E%3Cpath d='M11.4687 12.5605C11.1057 12.5605 10.7423 12.4233 10.4663 12.1471C10.056 11.7367 9.94623 11.1411 10.1408 10.6343C10.2093 10.4491 10.3178 10.276 10.4663 10.1269C11.0209 9.5724 11.9156 9.56734 12.4705 10.1219L12.4811 10.1318C13.036 10.6868 13.036 11.5867 12.4811 12.1419C12.2027 12.4209 11.8358 12.5605 11.4687 12.5605Z' fill='%23FFC515'/%3E%3Cpath d='M5.07875 18.9551C4.71527 18.9551 4.351 18.8166 4.0742 18.539C3.51889 17.9842 3.51889 17.084 4.0742 16.5291L4.09551 16.5083C4.64989 15.953 5.55052 15.953 6.1049 16.5083C6.65976 17.0632 6.65976 17.9628 6.1049 18.5177L6.08358 18.539C5.80616 18.8166 5.4419 18.9551 5.07875 18.9551ZM8.27236 15.7615C7.90936 15.7615 7.5451 15.6231 7.26781 15.3456C6.71295 14.7906 6.71295 13.8906 7.26781 13.3357L7.28865 13.3142C7.84319 12.7598 8.74366 12.7598 9.29804 13.3142C9.85302 13.8691 9.85302 14.7692 9.29804 15.3245L9.2772 15.3455C9.00009 15.6226 8.63644 15.7615 8.27236 15.7615Z' fill='%23FFC515'/%3E%3Cpath d='M1.89589 22.1384C1.53288 22.1384 1.16863 22.0001 0.891335 21.7222C0.336026 21.1676 0.336026 20.2678 0.891335 19.7128C1.4462 19.1578 2.3503 19.1526 2.90497 19.7077C3.4606 20.263 3.46565 21.1578 2.91002 21.7122L2.90007 21.7222C2.62312 21.9994 2.25947 22.1384 1.89584 22.1384L1.89589 22.1384Z' fill='%23FFC515'/%3E%3C/svg%3E%0A"); background-size: contain; transition: .2s ease-out; }
+
+.post-item:hover { background-color: rgba(255, 255, 255, 0.1); }
+
+.post-item:hover h5 { color: #ffc515; }
+
+.post-item:hover:after { transform: translateX(30%); }
+
+#footer { padding: 0; }
+
+#footer .row { border-top: 1px solid rgba(255, 255, 255, 0.05); }
+
+#footer span { display: inline-block; font-size: 12px; margin: 0 5%; letter-spacing: 0.15em; padding: 10px; }
+
+#footer a { color: #A3A3A3; }
+
+#footer a:hover { color: #ffc515; }
 
 #dots { position: absolute; top: 0; right: 1.5%; }
 

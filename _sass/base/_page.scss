@@ -40,6 +40,17 @@ h6 {
   letter-spacing: .025em;
   margin-bottom: 1em;
   line-height: 1.3em;
+
+  &.marker {
+    &:before {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 85px;
+      background: $primary;
+      margin-bottom: 1em;
+    }
+  }
 }
 
 h1 {
