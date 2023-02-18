@@ -58,16 +58,16 @@
   <div id="dots" class="">
     <img class="img-fluid" src="/assets/img/forest-skufca-memphis.jpg" data-src="/assets/img/forest-skufca-memphis.jpg" />
   </div>
-  <div class="container" style="user-select:none;">
-    <div class="row align-items-center">
+  <div class="container">
+    <div class="row align-items-center" style="user-select:none;">
       <div class="col-12 col-md-10">
-        <h1 class="hero-title mt-2 py-5">
+        <h1 class="hero-title mt-2 py-sm-5">
           Forest Skufca
           <span>Sr Marketing Operations Manager</span>
         </h1>
       </div>
       </div>
-      <div class="row">
+      <div class="row" style="user-select:none;">
         <div class="col-12 col-md-8 col-lg-6">
           <h4 class="mt-4">👋 Hi <span class="hue-shift" id="message"></span></h4>
           <h2>I'm a strategic thinker with a passion for driving growth through data-driven marketing.</h2>
@@ -100,13 +100,12 @@ window.addEventListener('load', function() {
 </script>
 
 <!-- Portriat Dots JS -->
-<script src="http://breathing-halftone.desandro.com/dist/breathing-halftone.pkgd.js"></script>
-<!-- <script src="http://breathing-halftone.desandro.com/dist/breathing-halftone.pkgd.min.js"></script> -->
+<script src="https://breathing-halftone.desandro.com/dist/breathing-halftone.pkgd.js"></script>
 <script>
   var img = document.querySelector('#dots img');
   new BreathingHalftone( img, {
-    dotSize: 1/180,
-    dotSizeThreshold: .3,
+    dotSize: 1/120,
+    dotSizeThreshold: .2,
     initVelocity: .7,
     oscPeriod: 8,
     oscAmplitude: 0.2,

@@ -19,6 +19,7 @@ p {
 
 a {
   color: $primary;
+  word-break: break-word;
   &:hover {
     color: darken($primary, 10%);
   }

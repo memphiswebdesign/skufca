@@ -6,7 +6,7 @@ body.dark-mode { background-color: #171717; color: #FAFAFA; }
 
 p { line-height: 1.75; }
 
-a { color: #1289FF; }
+a { color: #1289FF; word-break: break-word; }
 
 a:hover { color: #006fde; }
 
@@ -297,6 +297,8 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 #dots { position: absolute; top: 0; right: 2%; overflow: hidden; }
 
 #dots img, #dots canvas { filter: contrast(0.82); width: 50vw; max-width: 540px; opacity: .27; transform: translate(0%, 3.5%); }
+
+@media (max-width: 450px) { #dots img, #dots canvas { width: 65vw; } }
 
 .hue-shift { background-size: 200%; background-image: linear-gradient(105deg, #D16BA5, #86A8E7, #5FFBF1, #86A8E7, #D16BA5); background-clip: text; -webkit-background-clip: text; color: transparent; animation: text 5s linear infinite both; }
 
