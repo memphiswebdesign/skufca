@@ -4,12 +4,12 @@ body {
   @include body-font;
 
   &.light-mode {
-    background-color: #fafafa;
-    color: #222;
+    background-color: #FAFAFA;
+    color: #171717;
   }
   &.dark-mode {
-    background-color: #17212b;
-    color: #eee;
+    background-color: #171717;
+    color: #FAFAFA;
   }
 }
 
