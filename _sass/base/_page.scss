@@ -224,12 +224,13 @@ img.invert {
   left: 0;
   right: 0;
   z-index: 99;
+  will-change: auto;
 }
 
 body.scrolled #sticky {
   position: fixed;
   transform: translateY(-100%);
-  padding: 10px 0;
+  padding: 14px 0;
   background: rgba(#072B31, .6);
   -webkit-backdrop-filter: saturate(70%) blur(15px);
   backdrop-filter: saturate(70%) blur(15px);
@@ -237,7 +238,6 @@ body.scrolled #sticky {
 
   .link-back {
     @media (max-width: 768px) {font-size: 13.8px;}
-    @media (max-width: 450px) {font-size: 13px;}
   }
 }
 
