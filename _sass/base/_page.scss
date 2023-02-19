@@ -88,7 +88,6 @@ h4 {
     }
   }
 }
-@include font-size()
 
 // HR : Horizontal Rules
 hr {margin: 1rem 0;}
@@ -152,7 +151,7 @@ hr.tex-1 {
 }
 @media (min-width: 768px) { 
   section {
-    padding: 150px 0;
+    padding: 100px 0;
   }
 }
 

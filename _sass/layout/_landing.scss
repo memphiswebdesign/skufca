@@ -70,7 +70,12 @@
   }
 }
 
-#post {}
+#post {
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
 .post-item {
   display: flex;
   flex-direction: column;
@@ -80,7 +85,6 @@
   height: 100%;
   cursor: pointer;
   
-  a {}
   .tag, .date {display: block;}
   .tag {
     text-transform: uppercase;
@@ -129,6 +133,10 @@
   }
 }
 
+#post-template {
+  padding-top: 50px;
+}
+
 #footer {
   padding: 0;
   .row {
@@ -157,6 +165,8 @@
     top: 20px;
     right: 20px;
   }
+
+  img {opacity: 0;}
 
   img, canvas {
     filter: contrast(0.7);
