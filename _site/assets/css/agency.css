@@ -1,6 +1,6 @@
 body { overflow-x: hidden; font-family: 'Space Grotesk', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; background-color: #072B31; color: #FAFAFA; }
 
-p { line-height: 1.75; }
+p { line-height: 1.7; font-weight: 300; }
 
 a { color: #ffc515; word-break: break-word; }
 
@@ -12,29 +12,29 @@ h1, h2, h3, h4, h5, h6 { letter-spacing: .025em; margin-bottom: 1em; line-height
 
 h1.marker:before, h2.marker:before, h3.marker:before, h4.marker:before, h5.marker:before, h6.marker:before { content: ''; display: block; height: 4px; width: 85px; background: #ffc515; margin-bottom: 1em; }
 
-h1 { font-size: 2.4rem; }
+h1 { font-size: 2.2rem; }
 
-@media (max-width: 768px) { h1 { font-size: 1.85rem; } }
+@media (max-width: 768px) { h1 { font-size: 1.8rem; } }
 
-@media (max-width: 420px) { h1 { font-size: 1.6rem; } }
+@media (max-width: 420px) { h1 { font-size: 1.48rem; } }
 
-h2 { font-size: 2rem; }
+h2 { font-size: 1.85rem; }
 
-@media (max-width: 768px) { h2 { font-size: 1.7rem; } }
+@media (max-width: 768px) { h2 { font-size: 1.5rem; } }
 
-@media (max-width: 420px) { h2 { font-size: 1.45rem; } }
+@media (max-width: 420px) { h2 { font-size: 1.3rem; } }
 
-h3 { font-size: 1.7rem; }
+h3 { font-size: 1.65rem; }
 
-@media (max-width: 768px) { h3 { font-size: 1.5rem; } }
+@media (max-width: 768px) { h3 { font-size: 1.4rem; } }
 
 @media (max-width: 420px) { h3 { font-size: 1.25rem; } }
 
-h4 { font-size: 1.5rem; }
+h4 { font-size: 1.4rem; }
 
-@media (max-width: 768px) { h4 { font-size: 1.4rem; } }
+@media (max-width: 768px) { h4 { font-size: 1.22rem; } }
 
-@media (max-width: 420px) { h4 { font-size: 1.3rem; } }
+@media (max-width: 420px) { h4 { font-size: 1.1rem; } }
 
 hr { margin: 1rem 0; }
 
@@ -327,6 +327,20 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .post-item:hover:after { transform: translateX(30%); }
 
 #post-template { padding-top: 50px; }
+
+#post-template h1, #post-template h2, #post-template h3, #post-template h4, #post-template h5, #post-template h6 { margin: 2.2em 0 1em; }
+
+#post-template h1 { margin-top: 0; font-weight: 300; }
+
+#post-template p { font-size: 16.3px; }
+
+@media (max-width: 768px) { #post-template p { font-size: 15.6px; } }
+
+@media (max-width: 450px) { #post-template p { font-size: 14.8px; } }
+
+#post-template li { list-style: square; }
+
+#post-template li::marker { color: #ffc515; }
 
 #footer { padding: 0; }
 

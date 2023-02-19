@@ -16,7 +16,8 @@ body {
 }
 
 p {
-  line-height: 1.75;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 a {
@@ -54,24 +55,24 @@ h6 {
 }
 
 h1 {
-  font-size: 2.4rem;
-  @media (max-width: 768px) {font-size: 1.85rem;}
-  @media (max-width: 420px) {font-size: 1.6rem;}
+  font-size: 2.2rem;
+  @media (max-width: 768px) {font-size: 1.8rem;}
+  @media (max-width: 420px) {font-size: 1.48rem;}
 }
 h2 {
-  font-size: 2rem;
-  @media (max-width: 768px) {font-size: 1.7rem;}
-  @media (max-width: 420px) {font-size: 1.45rem;}
+  font-size: 1.85rem;
+  @media (max-width: 768px) {font-size: 1.5rem;}
+  @media (max-width: 420px) {font-size: 1.3rem;}
 }
 h3 {
-  font-size: 1.7rem;
-  @media (max-width: 768px) {font-size: 1.5rem;}
+  font-size: 1.65rem;
+  @media (max-width: 768px) {font-size: 1.4rem;}
   @media (max-width: 420px) {font-size: 1.25rem;}
 }
 h4 {
-  font-size: 1.5rem;
-  @media (max-width: 768px) {font-size: 1.4rem;}
-  @media (max-width: 420px) {font-size: 1.3rem;}
+  font-size: 1.4rem;
+  @media (max-width: 768px) {font-size: 1.22rem;}
+  @media (max-width: 420px) {font-size: 1.1rem;}
 }
 
 // Font Size Mixin
