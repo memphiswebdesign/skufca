@@ -230,14 +230,16 @@ img.invert {
 body.scrolled #sticky {
   position: fixed;
   transform: translateY(-100%);
-  padding: 14px 0;
+  padding: 1.2em 0;
   background: rgba(#072B31, .6);
   -webkit-backdrop-filter: saturate(70%) blur(15px);
   backdrop-filter: saturate(70%) blur(15px);
   animation: unTuck .33s ease-out forwards .3s;
 
   .link-back {
-    @media (max-width: 768px) {font-size: 13.8px;}
+    @media (max-width: 768px) {
+      font-size: 13.8px;
+    }
   }
 }
 

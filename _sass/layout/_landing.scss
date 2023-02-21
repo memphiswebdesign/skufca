@@ -64,6 +64,7 @@
       width: 100%;
     }
 
+    &.xs {transform: scale(.75);}
     &.sm {transform: scale(.78);}
     &.md {transform: scale(.9);}
     &.lg {transform: scale(1.22);}
@@ -95,7 +96,7 @@
     margin: 1em 0 2em 0;
   }
   h5 {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     margin: 0 0 5em 0;
  
     @media (max-width: 780px) {

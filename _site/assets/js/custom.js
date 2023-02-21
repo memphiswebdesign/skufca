@@ -15,7 +15,7 @@ const body = document.querySelector('body');
 // add event listener to window object for 'scroll' event
 window.addEventListener('scroll', () => {
   // check if user has scrolled down 100px
-  if (window.scrollY > 100) {
+  if (window.scrollY > 150) {
     // add the 'scrolled' class to the body element
     body.classList.add('scrolled');
   } else {
